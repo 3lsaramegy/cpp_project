@@ -1,13 +1,28 @@
 #include<iostream>
 
 using namespace std ;
+
+
+//This is commit to old code 
+
 /* 
     fancutions definition
-*/
 // fancution to clac Area
 double areaofsphere(float);
 // fancution to clac VOLUME
 double volumeofsphara(float);
+*/
+
+
+
+// fancution to clac Area
+double areaofsphere(float ra){    
+    return  4*3.14*ra*ra;
+}
+// fancution to clac VOLUME
+double volumeofsphara(float rv){
+    return 0.75*3.14*rv*rv*rv;
+}v
 
 // main fancution 
 int main(){
@@ -34,12 +49,5 @@ int main(){
         cout<<"Error In Input !!\n";
     }            
 }
-// fancution to clac Area
-double areaofsphere(float ra){    
-    return  4*3.14*ra*ra;
-}
-// fancution to clac VOLUME
-double volumeofsphara(float rv){
-    return 0.75*3.14*rv*rv*rv;
-}
+
 //Solved By </3lsaramegy>;
