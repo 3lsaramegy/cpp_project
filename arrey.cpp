@@ -2,21 +2,47 @@
 
 using namespace std ;
 
-int main(){
-int size ,size2 ;
 string frist_name[5];
 string scande_name[5];
-string famliy_name[5];
 
 
-
-//________________________________
-frist_name[0]="Donia";
-scande_name[0]="Ashraf";
-famliy_name[0]="nono";
-//_________________________________
-
-cout<<"Enter code name\n";
-cin>>size;
-cout<<"Name:"<<frist_name[size]<<" "<<scande_name[size]<<"\n";
+void arraystore(){
+int i;        
+for ( i = 0; i<5 ; i++)
+{
+        cout<<"Enter name:";
+        cin>>frist_name[i];
+        cout<<"Enter Dad name:";
+        cin>>scande_name[i];
 }
+}
+int main(){
+
+string ask ; int i ;
+while (true)
+{
+        /* code */
+        cout <<"Enter in to store data or out to Git data\n ";
+        cin>>ask;
+        if (ask =="in")
+{
+        arraystore();
+}
+else if (ask == "out")
+{
+        for ( i = 0; i <5 ; i++)
+        {
+                cout<<"Name:"<<frist_name[i]<<"\n";
+        }
+        
+}
+}
+}
+
+
+
+
+
+
+
+
